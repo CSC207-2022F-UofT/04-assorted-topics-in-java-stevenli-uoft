@@ -65,8 +65,7 @@ public class Trader<T> {
         if (!(item instanceof Tradable)) {
             return Tradable.MISSING_PRICE;
         } else {
-            Tradable item1 = (Tradable) item;
-            return item1.getPrice();
+            return ((Tradable) item).getPrice();
         }
     }
 
